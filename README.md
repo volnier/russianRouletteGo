@@ -1,5 +1,5 @@
 # russianRouletteGo
-russianRoulleteGo - a russian roulette-like programme that has a 1/6 chance to delete your OS.
+russianRouletteGo - a russian roulette-like programme that has a 1/6 chance to delete your OS.
 
 Last tested and built in Go 1.17.3
 ## Usage
